@@ -1,0 +1,228 @@
+* {
+    border: none;
+    color: #fff;
+    font-family: 'Arial';
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+    background-color: #000;
+}
+
+.programming {
+    color: #bbbb;
+    left: 0px;
+    top: 56px;
+    position: fixed;
+    font-size: 35px;
+    font-weight: bold;
+    width: 1023px;
+    text-align: center;
+}
+
+.brake-info {
+    color: #bbbb;
+    left: 0px;
+    top: 400px;
+    position: fixed;
+    font-size: 35px;
+    font-weight: bold;
+    width: 1023px;
+    text-align: center;
+}
+
+.warn-info {
+    color: #bbbb;
+    left: 0px;
+    top: 380px;
+    position: fixed;
+    font-size: 35px;
+    font-weight: bold;
+    width: 1023px;
+    text-align: center;
+    line-height: 34px;
+}
+
+.malf-info {
+    background-color: red;
+    left: 693px;
+    top: 445px;
+    position: fixed;
+    font-size: 35px;
+    font-weight: bold;
+    width: 5px; height: 5px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.programming.select .label {
+    position: absolute;
+    color: #bbbb;
+    width: 50%;
+    text-align: right;
+}
+
+.programming.select .info {
+    color: #95952D;
+    left: 50%;
+    position: absolute;
+}
+
+.programming.select {
+    color: #95952D;
+    font-size: 35px;
+    font-weight: bold;
+}
+  
+.work {
+    position: absolute;
+    width: 1024px; height: 600px;
+    background-color: #000;
+    background-image: url(../img/gradient\ new.png);
+}
+
+.layers {
+    position: absolute;
+    width: 1024px; height: 600px;
+    background-color: #000;
+}
+
+.layers::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1; 
+    content:url(../img/Start.gif) url(../img/hstl.png);   
+}
+
+.gif {
+    position: absolute;
+    width: 480px;
+    height: 320px;
+    top: 140px;
+    left: 272px;
+}
+
+.logo {
+    position: absolute;
+    width: 336px;
+    height: 113px;
+    top: 243px;
+    left: 344px;
+}
+
+.gold {
+    color: #95952D;
+}
+.red {
+    color: red;
+}
+
+.middle {
+    font-size: 26px;
+}
+
+.gold.active {
+    color: yellow;
+}
+
+.low-info {
+    font-size: 18px;
+    position: absolute;
+    top: 484px;
+}
+
+.door-info {
+    color: red;
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    top: 534px;
+    left: 208px;
+}
+
+.hood-info {
+    color: red;
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    top: 534px;
+    left: 755px;
+}
+
+.low-info.state {
+    top: 504px;
+}
+
+.turn {left: 256px;}
+.turn-state {
+    text-align: right;
+    width: 100px;
+    left: 204px;
+}
+
+.exhst {left: 715px;}
+.exhst-state {left: 715px;}
+
+.layer {
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.check {
+    background-image: url(../img/check.png);
+    background-position: 80px 210px;
+    background-size: 80%;
+}
+
+.park {
+    background-image: url(../img/park.png);
+    background-position: 102px 210px;
+    background-size: 80%;
+}
+
+.gearbox            {
+    background-position: 90px 93px;
+    background-size: 80%;
+}
+
+.gearbox::after {
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1; 
+    content: url(../img/P.png) url(../img/R.png) url(../img/N.png) url(../img/D.png) url(../img/3.png);
+}
+
+.gearbox.parking    {background-image: url(../img/P.png);}
+.gearbox.rear       {background-image: url(../img/R.png);}
+.gearbox.neutral    {background-image: url(../img/N.png);}
+.gearbox.drive      {background-image: url(../img/D.png);}
+.gearbox.three      {background-image: url(../img/3.png);}
+
+.car-mode       {
+    background-size: 66%;
+    background-position: center;
+}
+.car-mode.main, .car-mode.programming, .car-mode.switch   {background-image: url(../img/car\ main.png);}
+.car-mode.front, .car-mode.turn-sel {background-image: url(../img/car\ front.png);}
+.car-mode.back, .car-mode.exh-sel  {background-image: url(../img/car\ back.png);}
+
+.car-mode::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1; 
+    content:url(../img/car\ main.png) url(../img/car\ front.png) url(../img/car\ back.png);   
+}
+
+.cross > div {
+    position: absolute;
+    left: 0; top: 0;
+}
+
+.cross .vertical {
+    width: 50%;
+    height: 100%;
+    border-right: solid 1px #fff;
+}
+.cross .horizontal {
+    width: 100%;
+    height: 50%;
+    border-bottom: solid 1px #fff;
+}
